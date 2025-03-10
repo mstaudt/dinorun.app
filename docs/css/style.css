@@ -1,0 +1,204 @@
+@font-face {
+  font-family: Beiruti;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/font/Beiruti-VariableFont_wght.ttf");
+  src: local('Beiruti'), local('Beiruti'), url("/font/Beiruti-VariableFont_wght.ttf") format('truetype')
+}
+
+@font-face {
+  font-family: Beiruti;
+  font-style: normal;
+  font-weight: 800;
+  src: url("/font/Beiruti-VariableFont_wght.ttf");
+  src: local('Beiruti Bold'), local('Beiruti-Bold'), url("/font/Beiruti-VariableFont_wght.ttf") format('truetype')
+}
+
+@font-face {
+  font-family: material icons;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/MaterialIcons-Regular.eot);
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(/font/MaterialIcons-Regular.ttf) format('truetype')
+}
+
+.material-icons {
+  font-family: material icons;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga'
+}
+
+html {
+  background-color: #763b3b;
+  background-image: url("/img/background_tile.png");
+  background-repeat: repeat;
+  overflow-y: scroll
+}
+
+body {
+  font-family: Beiruti, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
+  font-size: 2em;
+  word-break: break-word;
+
+  color: #fedbb7;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 5px 5px #2e1313;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  min-height: 75vh;
+}
+
+.flex-container {
+  display: flex;
+  gap: 0.1em;
+  align-items: center;
+}
+
+.header {
+  margin-top: 75px;
+}
+
+.header h1 {
+  margin: 0;
+  line-height: 0.9em;
+}
+
+.header p {
+  margin: 0 0 0 5px;
+}
+
+.header h2 {
+  margin: 0;
+  text-shadow: 3px 3px #2e1313;
+  line-height: 0;
+}
+
+.header div {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.header > img {
+  width: 200px;
+  align-self: center;
+}
+
+.google-play-badge img {
+  width: 200px;
+}
+
+.install-now {
+  margin-bottom: 10px;
+  font-size: 0.75em;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.youtube-player {
+  width: 650px;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+  cursor: auto;
+}
+
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  opacity: 0.5;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center
+}
+
+footer ul li {
+  flex: 1;
+  text-align: center;
+}
+
+footer a, footer span {
+  font-size: 0.5em;
+}
+
+footer .material-icons {
+  position: relative;
+  top: 8px
+}
+
+@media screen and (max-width: 768px) {
+  .header > img {
+    width: 100px;
+    align-self: center;
+  }
+
+  body {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-shadow: 5px 5px #2e1313;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .header {
+    margin-top: 25px;
+  }
+
+  .google-play-badge img {
+    width: 150px;
+  }
+
+  .youtube-player {
+    width: 100%;
+    height: 215px;
+  }
+
+}
