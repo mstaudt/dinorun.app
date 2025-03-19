@@ -72,10 +72,30 @@ p {
   text-align: justify;
 }
 
+.language-selector {
+  display: table;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.language-selector .material-icons {
+  font-size: 0.7em;
+  margin-right: 5px;
+}
+
+.language-selector a {
+  text-decoration: none;
+  font-size: 0.7em;
+  padding: 5px 10px;
+  border: 1px solid #fedbb7;
+  border-radius: 10px;
+}
+
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 0 50px;
   min-height: 75vh;
 }
 
@@ -101,7 +121,7 @@ main {
 }
 
 .header {
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .header h1 {
@@ -130,11 +150,12 @@ main {
 }
 
 .google-play-badge img {
-  width: 200px;
+  width: 175px;
+  margin-top: 10px;
+  margin-right: 20px;
 }
 
 .install-now {
-  margin-bottom: 10px;
   font-size: 0.75em;
 }
 
@@ -160,7 +181,7 @@ a {
   text-align: center;
   background: #ffdbb7;
   color: #201202;
-  padding: 10px 20px 0 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
@@ -177,12 +198,12 @@ a {
 }
 
 .button img {
-  max-width: 200px;
+  max-width: 175px;
   display: block;
   margin: 0 auto;
 }
 
-.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active {
   text-decoration: none;
   color: inherit;
   outline: 0;
@@ -240,12 +261,20 @@ footer .material-icons {
     padding: 10px;
   }
 
+  .language-selector {
+    margin-top: 0;
+  }
+
   .header {
     margin-top: 25px;
   }
 
   .google-play-badge img {
-    width: 150px;
+    width: 125px;
+  }
+
+  .install-now {
+    font-size: 0.5em;
   }
 
   .content {
@@ -269,5 +298,14 @@ footer .material-icons {
   .image-container > * {
     max-width: 48%;
   }
+}
 
+@media screen and (max-width: 550px) {
+  .image-container {
+    gap: 10px;
+  }
+
+  .image-container > * {
+    max-width: 100%;
+  }
 }
