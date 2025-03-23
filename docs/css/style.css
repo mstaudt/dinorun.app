@@ -149,6 +149,10 @@ main {
   align-self: center;
 }
 
+.logo-title {
+  width: 80%;
+}
+
 .google-play-badge img {
   width: 175px;
   margin-top: 10px;
@@ -267,6 +271,10 @@ footer .material-icons {
 
   .header {
     margin-top: 25px;
+  }
+
+  .logo-title {
+    width: 100%;
   }
 
   .google-play-badge img {
